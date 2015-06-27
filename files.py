@@ -57,3 +57,7 @@ def pad(x):
 createdTime = time.localtime(metaData.st_mtime)
 print('Created time ')
 print(str(createdTime.tm_hour) + ':' + str(pad(createdTime.tm_min)) + ' on ' + str(createdTime.tm_mon) + '/' + str(createdTime.tm_mday) + '/' + str(createdTime.tm_year))
+
+#------------------ walk through the directories
+for dirpath, dirs, files in os.walk("d:/vm"):
+	print(dirpath)

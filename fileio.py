@@ -10,3 +10,4 @@ with open('d:/test.txt', encoding='utf-8') as file:
     for line in file:
         lineCount += 1
         print('{:<5} {}'.format(lineCount, line.rstrip()))
+
